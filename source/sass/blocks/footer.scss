@@ -1,0 +1,139 @@
+.footer {
+  background: $dark-color-type-7;
+  padding: 44px 0 37px;
+  box-sizing: border-box;
+
+  @media (max-width: $max-tablet-width) {
+    padding-bottom: 44px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding: 48px 0 52px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @media (max-width: $max-tablet-width) {
+    width: calc(695 / 768 * 100vw);
+  }
+
+  @media (max-width: $max-mobile-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 160px;
+  }
+}
+
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 814px;
+
+  @media (max-width: $max-tablet-width) {
+    width: 556px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100px;
+    align-content: space-between;
+  }
+}
+
+.footer__item:hover .footer__item-link {
+  opacity: 0.6;
+}
+
+.footer__item:active .footer__item-link {
+  opacity: 1;
+}
+
+.footer__item--logo {
+  pointer-events: none;
+  margin-right: auto;
+
+  @media (max-width: $max-tablet-width) {
+    margin-left: 7px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin: 0;
+    order: 1;
+  }
+}
+
+.footer__item--services {
+  @media (max-width: $max-mobile-width) {
+    order: 3;
+  }
+}
+
+.footer__item--season-tickets {
+  @media (max-width: $max-mobile-width) {
+    order: 5;
+  }
+}
+
+.footer__item--actions {
+  @media (max-width: $max-mobile-width) {
+    order: 2;
+    padding-left: 16px;
+  }
+}
+
+.footer__item--coaches {
+  @media (max-width: $max-mobile-width) {
+    order: 4;
+    padding-left: 16px;
+  }
+}
+
+.footer__item--shedules {
+  @media (max-width: $max-mobile-width) {
+    order: 6;
+    padding-left: 16px;
+  }
+}
+
+.footer__item-link {
+  padding: 0 20px;
+  color: $base-light-color;
+
+  @media (max-width: $max-tablet-width) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding: 0;
+  }
+}
+
+.footer__item-link--active {
+  pointer-events: none;
+  padding: 0;
+  display: block;
+
+  @media (max-width: $max-tablet-width) {
+    padding: 0;
+  }
+}
+
+.footer__logo {
+  @media (max-width: $max-tablet-width) {
+    width: 82px;
+    height: 18px;
+    margin-top: 2px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: 68px;
+    height: 15px;
+  }
+}

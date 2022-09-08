@@ -1,0 +1,13 @@
+.information {
+  list-style-type: disc;
+  margin-left: 22px;
+}
+
+.information__item {
+  margin-bottom: 13px;
+  letter-spacing: 0.1px;
+}
+
+.information__item:last-child {
+  margin-bottom: 0;
+}

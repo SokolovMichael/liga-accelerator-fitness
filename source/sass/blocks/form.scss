@@ -1,0 +1,139 @@
+.form {
+  width: 410px;
+  margin: 0 170px 0 auto;
+
+  @media (max-width: $desktop-stretching-max-width) {
+    margin-right: auto;
+    padding-right: 30px;
+  }
+
+  @media (max-width: $max-tablet-width) {
+    width: 472px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: 290px;
+    padding-right: 0;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.form__fieldset legend {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.25px;
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
+}
+
+.form__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 27px;
+
+  @media (max-width: $max-tablet-width) {
+    gap: 60px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    display: block;
+    margin-bottom: 37px;
+  }
+}
+
+.form__item {
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 34px;
+  }
+}
+
+.form__item:last-child {
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__item input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid $light-color-type-5;
+  background: transparent;
+  color: $base-light-color;
+  padding: 5px;
+  display: block;
+}
+
+.form__item input::placeholder {
+  color: $base-light-color;
+}
+
+.form__item input::-moz-placeholder {
+  opacity: 1;
+}
+
+.form__item--tel {
+  position: relative;
+}
+
+.form__item--tel .form__label span:last-child {
+  display: none;
+  text-transform: lowercase;
+  font-size: 12px;
+  line-height: 14px;
+  color: $background-color-type-1;
+}
+
+.form__item--alert .form__label span:last-child {
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+}
+
+.form button {
+  background: transparent;
+  cursor: pointer;
+  border: 3px solid $base-light-color;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $base-light-color;
+  letter-spacing: 0.5px;
+  padding: 18px 16px 16px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form button:hover {
+  opacity: 0.6;
+}
+
+.form button:active {
+  opacity: 1;
+}

@@ -1,0 +1,25 @@
+.additionally {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1366px;
+  margin: 0 auto;
+
+  @media (max-width: $desktop-stretching-max-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $max-tablet-width) {
+    display: block;
+  }
+}
+
+.additionally__form-wrapper {
+  padding: 68px 0 68px;
+  box-sizing: border-box;
+  background: $base-dark-color;
+  color: $base-light-color;
+
+  @media (max-width: $max-tablet-width) {
+    margin-bottom: 68px;
+  }
+}

@@ -1,0 +1,28 @@
+.external {
+  margin: auto 0 40px;
+
+  @media (max-width: $max-tablet-width) {
+    display: none;
+  }
+}
+
+.external__item {
+  margin-bottom: 12px;
+}
+
+.external__item:last-child {
+  margin-bottom: 0;
+}
+
+.external__item:hover .external__link {
+  opacity: 0.6;
+}
+
+.external__item:active .external__link {
+  opacity: 1;
+}
+
+.external__link {
+  color: $base-light-color;
+  font-size: 12px;
+}

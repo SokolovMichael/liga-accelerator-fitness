@@ -1,0 +1,126 @@
+.contacts {
+  font-style: normal;
+  padding: 68px 98px 0 122px;
+  border-top: 1px solid $light-color-type-5;
+  border-right: 1px solid $light-color-type-5;
+
+  @media (max-width: $max-tablet-width) {
+    margin: 0 auto;
+    border: none;
+    width: 532px;
+    padding: 0 0 62px 30px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding-left: 0;
+    width: 290px;
+  }
+}
+
+.contacts__title {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  margin-bottom: 40px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.25px;
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
+}
+
+.contacts__list {
+  display: grid;
+  grid-template-columns: 170px 170px;
+  position: relative;
+  min-height: 115px;
+  align-content: space-between;
+  justify-content: space-between;
+
+  @media (max-width: $max-tablet-width) {
+    grid-template-columns: 218px 218px;
+    min-height: 145px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    display: flex;
+    flex-direction: column;
+    min-height: 310px;
+    justify-content: space-between;
+  }
+}
+
+.contacts__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 90%;
+  background: $light-color-type-5;
+  width: 1px;
+
+  @media (max-width: $max-mobile-width) {
+    display: none;
+  }
+}
+
+.contacts__item--address {
+  @media (max-width: $max-mobile-width) {
+    order: 1;
+  }
+}
+
+.contacts__item--phone {
+  @media (max-width: $max-mobile-width) {
+    order: 3;
+  }
+}
+
+.contacts__item--work-schedule {
+  @media (max-width: $max-mobile-width) {
+    order: 2;
+  }
+}
+
+.contacts__item--email {
+  @media (max-width: $max-mobile-width) {
+    order: 4;
+  }
+}
+
+.contacts__item-title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 5px;
+  font-weight: 700;
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.contacts__details {
+  color: $base-dark-color;
+}
+
+.contacts__item p,
+.contacts__details {
+  @media (max-width: $max-tablet-width) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

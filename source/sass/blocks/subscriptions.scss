@@ -1,0 +1,91 @@
+.subscriptions {
+  background: $light-color-type-2;
+  padding: 118px 0 120px;
+  box-sizing: border-box;
+  margin-bottom: 120px;
+
+  @media (max-width: $max-tablet-width) {
+    padding: 100px 0;
+    margin-bottom: 99px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding: 68px 0 70px;
+    margin-bottom: 69px;
+  }
+}
+
+.subscriptions__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (max-width: $max-tablet-width) {
+    width: calc(442 / 768 * 100vw);
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: calc(290 / 320 * 100vw);
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+  }
+}
+
+.subscriptions__wrapper::before {
+  position: absolute;
+  content: "";
+  right: -285px;
+  bottom: -270px;
+  background-image: url("../img/background/subscriptions/back-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 470px;
+  height: 494px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/subscriptions/back-desktop@2x.png");
+  }
+
+  @media (max-width: $max-tablet-width) {
+    background-image: url("../img/background/subscriptions/back-tablet.png");
+    width: 423px;
+    height: 444px;
+    right: -240px;
+    bottom: -225px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/subscriptions/back-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $max-mobile-width) {
+    display: none;
+  }
+}
+
+.subscriptions__wrapper h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  letter-spacing: 1.5px;
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+  }
+}

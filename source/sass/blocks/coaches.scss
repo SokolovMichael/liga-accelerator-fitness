@@ -1,0 +1,154 @@
+.coaches {
+  width: 1298px;
+  margin: 0 auto 120px;
+
+  @media (max-width: $desktop-stretching-width) {
+    width: calc(1298 / 1338 * 100vw);
+  }
+
+  @media (max-width: $max-tablet-width) {
+    width: calc(700 / 768 * 100vw);
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: calc(320 / 320 * 100vw);
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+  }
+}
+
+.coaches h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  margin: 0 0 52px 70px;
+  letter-spacing: 1.5px;
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin: 0 0 42px;
+    text-align: center;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 44px;
+  }
+}
+
+.coaches__swiper-wrapper {
+  position: relative;
+}
+
+.coaches__swiper {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1160px;
+
+  @media (max-width: $desktop-stretching-width) {
+    width: calc(1160 / 1338 * 100vw);
+  }
+
+  @media (max-width: $max-tablet-width) {
+    width: calc(566 / 768 * 100vw);
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: calc(226 / 320 * 100vw);
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 226px;
+  }
+}
+
+.coaches__list {
+  color: $base-light-color;
+}
+
+.coaches--nojs .coaches__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+
+  @media (max-width: $max-tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    display: block;
+  }
+}
+
+.coaches--nojs .coaches__item {
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.coaches--nojs .coaches__item:last-child {
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 0;
+  }
+}
+
+.coaches__buttons-wrapper {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 0;
+}
+
+.coaches--nojs .coaches__buttons-wrapper {
+  display: none;
+}
+
+.coaches__button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.coaches__button:hover {
+  opacity: 0.6;
+}
+
+.coaches__button:active {
+  opacity: 1;
+}
+
+.coaches__button--next {
+  margin: 0 0 0 auto;
+}
+
+.coaches__button-icon {
+  fill: transparent;
+
+  @media (max-width: $max-mobile-width) {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.coaches__button--prev .coaches__button-icon {
+  transform: rotate(180deg);
+}

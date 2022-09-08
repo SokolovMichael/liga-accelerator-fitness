@@ -1,0 +1,219 @@
+.action {
+  width: 1160px;
+  margin: 0 auto 118px;
+
+  @media (max-width: $max-tablet-width) {
+    width: calc(678 / 768 * 100vw);
+    margin-bottom: 99px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: calc(290 / 320 * 100vw);
+    margin-bottom: 68px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+  }
+}
+
+.action h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  margin-bottom: 52px;
+  text-align: center;
+  letter-spacing: 1.5px;
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 42px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 44px;
+  }
+}
+
+.action__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  @media (max-width: $max-tablet-width) {
+    gap: 30px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    display: block;
+  }
+}
+
+.action__item {
+  color: $background-color-type-3;
+  border: 7px solid transparent;
+  border-image: linear-gradient($underline-color 0, $dark-color-type-4 100%);
+  border-image-slice: 1;
+  box-sizing: border-box;
+  padding: 18px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: $max-tablet-width) {
+    min-height: 211px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 27px 42px 30px 42px;
+    align-items: center;
+  }
+}
+
+.action__item:last-child {
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 0;
+  }
+}
+
+.action__item--year {
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: $background-color-type-1;
+  color: $base-light-color;
+  border: none;
+  padding: 0;
+
+  @media (max-width: $max-tablet-width) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+    grid-template-columns: calc(279 / 768 * 100vw) 1fr;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.action__item-wrapper {
+  box-sizing: border-box;
+  padding: 34px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.action__item-text {
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.action__item-text h3 {
+  font-size: 28px;
+  line-height: 44px;
+  color: $base-light-color;
+}
+
+.action__item-text p span {
+  font-size: 70px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.action__item-text p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 22px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.action__item-text p:last-child {
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 0;
+  }
+}
+
+.action__item-wrapper .action__link {
+  color: $base-light-color;
+  line-height: 17px;
+  font-size: 14px;
+}
+
+.action__link {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px 0;
+  color: $background-color-type-3;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+
+  @media (max-width: $max-mobile-width) {
+    margin: 0 auto;
+  }
+}
+
+.action__link:hover {
+  opacity: 0.6;
+}
+
+.action__link:active {
+  opacity: 1;
+}
+
+.action__picture {
+  background: $base-dark-color;
+  width: 280px;
+  height: 462px;
+
+  @media (max-width: $max-tablet-width) {
+    width: calc(399 / 768 * 100vw);
+    height: calc(462 / 768 * 100vw);
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: calc(290 / 320 * 100vw);
+    height: calc(299 / 320 * 100vw);
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+    height: 299px;
+  }
+}
+
+.action__picture img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.action__text-wrapper h3 {
+  font-size: 26px;
+  line-height: 42px;
+}
+
+.action__text-wrapper p {
+  font-size: 16px;
+  line-height: 22px;
+}

@@ -1,0 +1,258 @@
+.gym {
+  width: 1160px;
+  margin: 0 auto 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 100px;
+
+  @media (max-width: $max-tablet-width) {
+    display: block;
+    width: calc(678 / 768 * 100vw);
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+  }
+}
+
+.gym__description {
+  padding: 47px 85px 47px 60px;
+  box-sizing: border-box;
+
+  @media (max-width: $max-tablet-width) {
+    padding: 0;
+    text-align: center;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: calc(290 / 320 * 100vw);
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+  }
+}
+
+.gym__description h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 1.5px;
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.2px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+}
+
+.gym__description p {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 38px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.gym__benefits-list {
+  font-weight: 300;
+
+  @media (max-width: $max-tablet-width) {
+    width: calc(502 / 768 * 100vw);
+    margin: 0 auto 44px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: 100%;
+    margin: 0 0 33px;
+  }
+}
+
+.gym__benefits-item {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.gym__benefits-item:last-child {
+  margin-bottom: 0;
+
+  @media (max-width: $max-tablet-width) {
+    display: none;
+  }
+}
+
+.gym__benefits-item br {
+  display: none;
+
+  @media (max-width: $mobile-width-control-point) {
+    display: block;
+  }
+}
+
+.gym__picture {
+  width: 660px;
+  height: 401px;
+  background: $base-dark-color;
+  color: $base-light-color;
+
+  @media (max-width: $max-tablet-width) {
+    width: calc(678 / 768 * 100vw);
+    height: calc(345 / 768 * 100vw);
+    margin: 0 auto;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: calc(320 / 320 * 100vw);
+    height: calc(313 / 320 * 100vw);
+    margin: 0 0 40px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+    height: 313px;
+  }
+}
+
+.gym__picture img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.gym__video {
+  width: 364px;
+  height: 228px;
+  position: absolute;
+  bottom: 0;
+  left: 78px;
+  right: 0;
+  margin: auto;
+
+  @media (max-width: $max-tablet-width) {
+    width: calc(266 / 768 * 100vw);
+    height: calc(167 / 768 * 100vw);
+    left: 0;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    position: relative;
+    width: calc(320 / 320 * 100vw);
+    height: calc(167 / 320 * 100vw);
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+    height: 167px;
+  }
+}
+
+.gym__video-picture {
+  width: 100%;
+  height: 100%;
+  background: $base-dark-color;
+  color: $base-light-color;
+  display: block;
+  position: relative;
+}
+
+.gym__video-picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $background-color-type-6;
+  width: 100%;
+  height: 100%;
+}
+
+.gym__video-picture img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.gym__video-link iframe {
+  border: none;
+  width: 364px;
+  height: 228px;
+
+  @media (max-width: $max-tablet-width) {
+    width: calc(266 / 768 * 100vw);
+    height: calc(167 / 768 * 100vw);
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: calc(320 / 320 * 100vw);
+    height: calc(167 / 320 * 100vw);
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+    height: 167px;
+  }
+}
+
+.gym__button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+.gym__button:hover {
+  opacity: 0.6;
+}
+
+.gym__button:active {
+  opacity: 1;
+}
+
+.gym__video-link,
+.gym__video--nojs .gym__video-picture,
+.gym__video--nojs .gym__button,
+.gym__video-picture--hidden,
+.gym__button--hidden {
+  display: none;
+}
+
+.gym__video--nojs .gym__video-link,
+.gym__video-link--played {
+  display: block;
+}
