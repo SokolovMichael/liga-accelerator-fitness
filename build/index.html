@@ -72,7 +72,7 @@
             <ul class="gym__benefits-list">
               <li class="gym__benefits-item">Supergym – самый большой фитнес центр&nbsp;за Уралом и идеальное место&#32;
                 <br>для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</li>
-              <li class="gym__benefits-item">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</li>
+              <li class="gym__benefits-item">В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</li>
             </ul>
           </div>
           <div class="gym__picture">
@@ -104,7 +104,7 @@
                 <img src="img/content/gym/video/image-mobile.jpg" srcset="image-mobile@2x.jpg 2x" loading="lazy" width="320" height="167" alt="Просмотреть видео.">
               </picture>
             </div>
-            <div class="gym__video-link">
+            <div class="gym__video-link" id="gym-video">
               <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?rel=0&showinfo=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <button class="gym__button" type="button">
@@ -513,6 +513,14 @@
                 <p>Занимайтесь без очередей и&nbsp;толпучки</p>
               </div>
             </li>
+            <li class="benefits__item benefits__item--training">
+              <div class="benefits__alert">
+                <p><span>100</span>Тренажеров</p>
+              </div>
+              <div class="benefits__description benefits__description--training">
+                <p>Современные тренажеры на&nbsp;все&nbsp;группы мышц</p>
+              </div>
+            </li>
             <li class="benefits__item benefits__item--parking">
               <div class="benefits__promo-text">
                 <p><span>70</span>машин</p>
@@ -520,14 +528,6 @@
               <div class="benefits__description">
                 <h3>Собственная парковка</h3>
                 <p>Вы всегда найдете место для своей&nbsp;машины на нашей парковке</p>
-              </div>
-            </li>
-            <li class="benefits__item benefits__item--training">
-              <div class="benefits__alert">
-                <p><span>100</span>Тренажеров</p>
-              </div>
-              <div class="benefits__description benefits__description--training">
-                <p>Современные тренажеры на&nbsp;все&nbsp;группы мышц</p>
               </div>
             </li>
             <li class="benefits__item benefits__item--comfort">
@@ -700,15 +700,14 @@
       </main>
       <footer class="page__footer footer">
         <div class="footer__wrapper">
+          <a class="footer__link footer__link--active">
+            <svg class="footer__logo" width="87" height="20">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+            <span class="visually-hidden">На главную</span>
+          </a>
           <ul class="footer__list">
-            <li class="footer__item footer__item--logo">
-              <a class="footer__item-link footer__item-link--active">
-                <svg class="footer__logo" width="87" height="20">
-                  <use xlink:href="img/sprite.svg#logo"></use>
-                </svg>
-                <span class="visually-hidden">На главную</span>
-              </a>
-            </li>
+            <li class="footer__item"></li>
             <li class="footer__item footer__item--services">
               <a class="footer__item-link" href="#">Услуги</a>
             </li>

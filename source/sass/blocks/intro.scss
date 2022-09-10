@@ -1,5 +1,5 @@
 .intro {
-  background: linear-gradient(to top right, $background-color-type-4 8.95%, $background-color-type-5 87.03%);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, $background-color-type-5 -46.69deg, $background-color-type-4 32.24deg, $background-color-type-5 313.31deg, $background-color-type-4 392.24deg);
   color: $base-light-color;
   padding: 50px 0;
   box-sizing: border-box;
@@ -113,17 +113,17 @@
 .intro__list {
   text-transform: none;
   position: absolute;
-  bottom: 28px;
   left: -77px;
+  top: 127px;
 
   @media (max-width: $max-tablet-width) {
-    bottom: 16px;
-    left: -87px;
+    left: -88px;
+    top: 95px;
   }
 
   @media (max-width: $max-mobile-width) {
-    bottom: 13px;
     left: 0;
+    top: 83px;
   }
 }
 

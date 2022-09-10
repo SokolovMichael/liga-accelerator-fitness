@@ -1,6 +1,24 @@
 .information {
   list-style-type: disc;
-  margin-left: 22px;
+  overflow-y: auto;
+  height: 120px;
+  padding-left: 22px;
+
+  @media (max-width: $desktop-stretching-width) {
+    height: calc(120 / 1338 * 100vw);
+  }
+
+  @media (max-width: $max-tablet-width) {
+    height: calc(120 / 768 * 100vw);
+  }
+
+  @media (max-width: $max-mobile-width) {
+    height: calc(120 / 320 * 100vw);
+  }
+
+  @media (max-width: $mobile-width-only) {
+    height: 120px;
+  }
 }
 
 .information__item {

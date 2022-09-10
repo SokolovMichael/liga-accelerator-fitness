@@ -1,7 +1,6 @@
 const form = document.querySelector('.form');
 const formFieldset = form.querySelector('.form__fieldset');
 const formItemTel = formFieldset.querySelector('.form__item--tel');
-const sendFormButton = form.querySelector('button');
 
 const inputTel = () => {
   document.addEventListener('DOMContentLoaded', () => {
@@ -18,10 +17,12 @@ const inputTel = () => {
       if (clearVal !== 'false' && evt.type !== 'blur') {
         if (val.length < matrix.match(/([\_\d])/g).length) {
           formItemTel.classList.add('form__item--alert');
-          sendFormButton.disabled = true;
+          form.addEventListener('submit', function (event) {
+            event.preventDefault();
+          });
         } else {
           formItemTel.classList.remove('form__item--alert');
-          sendFormButton.disabled = false;
+          form.submit();
         }
       }
 

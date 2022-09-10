@@ -27,3 +27,12 @@ a {
   text-decoration: none;
   font-style: normal;
 }
+
+select,
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="tel"],
+input[type="submit"] {
+  border-radius: 0;
+}

@@ -55,7 +55,8 @@
 
 .action__item {
   color: $background-color-type-3;
-  border: 7px solid transparent;
+  border-width: 7px;
+  border-style: solid;
   border-image: linear-gradient($underline-color 0, $dark-color-type-4 100%);
   border-image-slice: 1;
   box-sizing: border-box;
