@@ -528,9 +528,6 @@ input[type="submit"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1680,8 +1677,8 @@ input[type="submit"] {
   margin: 0 auto;
   -ms-grid-columns: 1fr 360px 1fr;
   grid-template-columns: 1fr 360px 1fr;
-  -ms-grid-rows: 1fr 158px 1fr;
-  grid-template-rows: 1fr 158px 1fr;
+  -ms-grid-rows: 1fr 135px 1fr;
+  grid-template-rows: 1fr 135px 1fr;
   position: relative;
 }
 
@@ -1732,13 +1729,13 @@ input[type="submit"] {
   padding: 50px 34px 60px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1 / 4;
-  margin: 0 60px;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
+  position: absolute;
+  width: 240px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .benefits__item--parking {
@@ -1767,6 +1764,13 @@ input[type="submit"] {
   -webkit-box-ordinal-group: 6;
   -ms-flex-order: 5;
   order: 5;
+}
+
+.benefits__item--parking,
+.benefits__item--experience {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
 }
 
 .benefits__promo-text {
@@ -2770,6 +2774,12 @@ input[type="submit"] {
   }
 
   .benefits__item--training {
+    position: relative;
+    left: 0;
+    top: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
@@ -2797,6 +2807,9 @@ input[type="submit"] {
   .benefits__item--parking,
   .benefits__item--experience {
     margin-left: 15px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
   }
 
   .benefits__promo-text p > span {
